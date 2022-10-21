@@ -1,0 +1,7 @@
+This is an example of an implementation of a simple transactional P-System in C using Posix Threads:
+
+  ab --> c
+  ac --> b
+  d --> Dissolution 
+  
+The first and second rules have priority one. The third rule has priority two. This last rule is executed when there are no more 'a' objects to finish the execution.
